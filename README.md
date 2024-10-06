@@ -19,6 +19,8 @@ A simple dashboard that displays a list of users fetched from a REST API and all
 
 ## Demo link
 
+[aermk.github.io/userlist_task/](https://aermk.github.io/userlist_task/)
+
 ## Install
 
 - git clone
