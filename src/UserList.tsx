@@ -10,9 +10,11 @@ type userListPropsType = {
 const UserList: FC<userListPropsType> = ({ userList }) => {
   return (
     <div className={styles.userListContainer}>
-      {userList.map((user, index) => (
-        <UserCard key={index} {...user}></UserCard>
-      ))}
+      {userList.length
+        ? userList.map((user, index) => (
+            <UserCard key={index} {...user}></UserCard>
+          ))
+        : "No data"}
     </div>
   );
 };
