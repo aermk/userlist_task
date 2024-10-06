@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import { User } from "./types";
 import UserCard from "./UserCard";
 import styles from "./styles.module.scss";
