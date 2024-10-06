@@ -73,4 +73,51 @@ $padding: 20px;
       }
     }
   }
+
+  .userListContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+
+    .card {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: $padding;
+      box-sizing: border-box;
+      transition: transform 0.2s ease-in-out;
+
+      &:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+
+      .userName {
+        color: $text-color;
+        font-size: 1.5em;
+      }
+
+      .userEmail,
+      .userPhone,
+      .userAddress {
+        color: $light-text-color;
+        font-size: 1em;
+      }
+
+      .icon {
+        margin-right: 4px;
+        color: #4a90e2;
+      }
+
+      .userWebsite {
+        color: #357abd;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
 }
