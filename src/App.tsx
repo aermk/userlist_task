@@ -1,7 +1,12 @@
-import React from "react";
+import Dashboard from "./Dashboard";
+import styles from "./styles.module.scss";
 
 const App = () => {
-  return <div>App</div>;
+  return (
+    <div className={styles.appContainer}>
+      <Dashboard />
+    </div>
+  );
 };
 
 export default App;
