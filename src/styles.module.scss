@@ -121,3 +121,28 @@ $padding: 20px;
     }
   }
 }
+
+@media (max-width: 1024px) {
+  .container {
+    .userListContainer {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    // padding: 15px;
+
+    .bar {
+      // flex-direction: column;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      margin-bottom: 10px;
+    }
+
+    .userListContainer {
+      grid-template-columns: 1fr;
+    }
+  }
+}
